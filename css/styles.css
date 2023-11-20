@@ -1,0 +1,283 @@
+
+#gameboy_container {
+    height: 855px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 4fr 1fr 4fr;
+}
+
+#gameboy_union {
+    height: 5px;
+    width: 400px;
+    /*background-color: #afb2b4;*/
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 7fr 4fr 1fr;
+}
+
+#gameboy_union #big{
+    background-color: #afb2b4;
+    grid-column: 2 / 3;
+    border-left: 1px solid #747474; 
+    border-right: 1px solid #747474;
+}
+
+#gameboy_union #little{
+    background-color: #afb2b4;
+    grid-column: 4 / 5;
+    border-left: 1px solid #747474; 
+    border-right: 1px solid #747474;
+}
+
+#gameboy_bottom_side {
+    width: 450px;
+    height: 450px;
+    background-color: #C0C4C7;
+    justify-self: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #929292; 
+}
+
+#hinge {
+    width: 450px;
+    height: 50px;
+    background-color: #afb2b4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#hinge #container {
+    width: 400px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 7fr 4fr 1fr;
+}
+
+#hinge_big{
+    background-color: #afb2b4;
+    grid-column: 2 / 3;
+    border-left: 1px solid #747474; 
+    border-right: 1px solid #747474;
+}
+
+#hinge_little{
+    background-color: #afb2b4;
+    grid-column: 4 / 5;
+    border-left: 1px solid #747474; 
+    border-right: 1px solid #747474;
+}
+
+#screen_btn_container {
+    height: 30px;
+    width: 450px;
+    margin-top: 15px;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+#screen_light_btn{
+    height: 30px;
+    width: 30px;
+    background-color: #afb2b4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen_light_btn img{
+    width: 20px;
+    height: 20px;
+}
+
+#buttons_group {
+    height: 150px;
+    width: 380px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#arrows_container {
+    height: 150px;
+    width: 150px;
+    /*border: 1px solid rgb(0, 0, 0);*/
+    border-radius: 50%;  
+    box-shadow: 0 0 0px 4px #8B8B8D;
+}
+
+#vertical_arrows, #horizontal_arrows {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background-color: #afb2b4;
+    left: 25px;
+    border-radius: 5%;
+    
+}
+
+#vertical_arrows{
+    top: 60px;
+}
+
+#horizontal_arrows{
+    top: 30px;
+    rotate: 90deg;
+}
+
+#action_bnts_container{
+    height: 75px;
+    width: 150px;
+    /*border: 1px solid rgb(0, 0, 0);*/
+    box-shadow: 0 0 0px 4px #8B8B8D;
+    border-radius: 60cap;  
+    rotate: -15deg;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+#a_btn, #b_btn {
+    width: 45px;
+    height: 45px;
+    background-color: #afb2b4;
+    margin-top: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 15deg;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#a_btn{
+    background-color: #afb2b4;
+    margin-left: 25px;
+}
+
+#a_btn p, #b_btn p {
+    margin: 0;
+    color: gray;
+}
+
+#speaker_container {
+    height: 100px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+}
+
+#speaker {
+    height: 100px;
+    width: 100px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#speaker div{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+
+#option_btns_group {
+    height: 50px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    padding-top: 10px;
+}
+
+#select_box_container, #start_box_container {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#select_box_container p, #start_box_container p{
+    margin: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#start_box_container{
+    margin-left: 20px;
+}
+
+#start_container, #select_container {
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid #8B8B8D;*/
+    box-shadow: 0 0 0px 2px #8B8B8D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start_btn, #select_btn {
+    width: 25px;
+    height: 25px;
+    background-color: #afb2b4;
+    border-radius: 50%;
+}
+
+#gameboy_top_side {
+    width: 450px;
+    height: 400px;
+    background-color: #C0C4C7;
+    justify-self: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #929292; 
+}
+
+#screen_frame {
+    width: 390px;
+    height: 330px;
+    background-color: black;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#screen {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(22, 22, 22);
+}
+
+#screen_frame img {
+    margin-top: 20px;
+    width: 150px;
+    height: 15px;
+}
+
+#screen_iframe {
+    width: inherit;
+    height: inherit;
+}
